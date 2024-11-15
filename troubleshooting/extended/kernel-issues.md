@@ -463,6 +463,10 @@ On rare occasions(mainly laptops), the SATA controller isn't officially supporte
 
 Note that you will only experience this issue after installing macOS onto the drive, booting the macOS installer will not error out due to SATA issues.
 
+### Partition issues
+
+* If you have cloned the macos partition using tools like dd or similar, you must set the correct GPT type code in the GPT. Use gpt or gdisk to set the code. 
+
 ## Kernel panic with IOPCIFamily on X99
 
 For those running the X99 platform from Intel, please go over the following:
